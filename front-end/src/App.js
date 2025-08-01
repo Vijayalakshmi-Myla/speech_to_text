@@ -18,7 +18,7 @@ const App = () => {
   //Sending Request to Backend
   
     try {
-      const res = await axios.post('https://speech-to-text-marb.onrender.com', formData)
+      const res = await axios.post('https://speech-to-text-marb.onrender.com/upload', formData)
       setTranscript(res.data.transcript)
     } catch (err) {
       console.error('Upload error:', err)
